@@ -10,9 +10,9 @@ add_executable(simplexDevelopment main.cpp)
 
 ### Linking
 #How to Dynamically Link
-target_link_libraries(simplexDevelopment ${simplex_lib_LINK})
+target_link_libraries(simplexDevelopment ${simplex-lib_LINK})
 
 #How To Static Link
-#target_link_libraries(simplexDevelopment ${simplex_lib_STATIC})
+#target_link_libraries(simplexDevelopment ${simplex-lib_STATIC})
 
 #target_link_libraries(simplexDevelopment -static) #Make it fully static (libstdc++ libc etc...)
