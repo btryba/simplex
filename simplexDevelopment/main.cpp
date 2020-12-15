@@ -1,5 +1,7 @@
+#include "simplex-lib/simplex-lib.hpp"
+using namespace simplex;
+
 /*#include <iostream>
-#include "Thread.hpp"
 
 void display(char* text)
 {
@@ -18,7 +20,6 @@ int main()
 }*/
 
 /*#include <iostream>
-#include "Signal.hpp"
 
 void displayHello()
 {
@@ -46,8 +47,7 @@ int main()
     return 0;
 }*/
 
-/*#include "Dictionary.hpp"
-#include "string.hpp"
+/*
 
 int main()
 {
@@ -63,10 +63,6 @@ int main()
     test2.add(1, 2);
     return 0;
 }*/
-
-#include "simplex-lib/Console.hpp"
-#include "simplex-lib/Socket.hpp"
-using namespace simplex;
 
 int main()
 {

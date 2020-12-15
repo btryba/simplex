@@ -1,12 +1,5 @@
-#include "simplex-tui/Screen.hpp"
-#include "simplex-tui/Label.hpp"
-#include "simplex-tui/Point.hpp"
-#include "simplex-tui/ScreenManager.hpp"
-#include "simplex-tui/Pane.hpp"
-#include "simplex-tui/FunctionKeyBar.hpp"
-
-#include "simplex-lib/Console.hpp"
-#include "simplex-lib/Exception.hpp"
+#include "simplex-tui/simplex-tui.hpp"
+#include "simplex-lib/simplex-lib.hpp"
 
 using namespace simplex::tui;
 
