@@ -10,9 +10,9 @@ add_executable(simplexTuiDevelopment main.cpp)
 
 ### Linking
 #How to Dynamically Link
-target_link_libraries(simplexDevelopment ${simplex_lib_LINK} ${simplex_tui_LINK})
+target_link_libraries(simplexTuiDevelopment ${simplex_lib_LINK} ${simplex_tui_LINK})
 
 #How To Static Link
-#target_link_libraries(simplexDevelopment ${simplex_lib_STATIC} ${simplex_tui_STATIC})
+#target_link_libraries(simplexTuiDevelopment ${simplex_lib_STATIC} ${simplex_tui_STATIC})
 
-#target_link_libraries(simplexDevelopment -static) #Make it fully static (libstdc++ libc etc...)
+#target_link_libraries(simplexTuiDevelopment -static) #Make it fully static (libstdc++ libc etc...)
