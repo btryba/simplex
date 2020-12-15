@@ -6,13 +6,13 @@ include_directories(".")
 include_directories("..")
 
 #Generate executable
-add_executable(simplexDevelopment main.cpp)
+add_executable(${PROJECT_NAME} main.cpp)
 
 ### Linking
 #How to Dynamically Link
-target_link_libraries(simplexDevelopment ${simplex-lib_LINK})
+target_link_libraries(${PROJECT_NAME} simplex-lib)
 
 #How To Static Link
-#target_link_libraries(simplexDevelopment ${simplex-lib_STATIC})
+#target_link_libraries(${PROJECT_NAME} simplex-lib_STATIC)
 
-#target_link_libraries(simplexDevelopment -static) #Make it fully static (libstdc++ libc etc...)
+#target_link_libraries(${PROJECT_NAME} -static) #Make it fully static (libstdc++ libc etc...)
