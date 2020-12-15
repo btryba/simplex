@@ -9,6 +9,7 @@ First you will need to install g++, gdb, CMake (and I highly recommend Ninja). O
 If you don't have the compilers yet:
 
 `apt install g++ gdb build-essential`
+
 To install cmake and ninja:
 
 `apt install cmake ninja-build`
@@ -22,6 +23,15 @@ To install cmake and ninja:
 `dnf install cmake ninja-build`
 
 ## To Build:
+The first step will be to clone this repository and get all the submodules:
+
+```
+git clone https://github.com/btryba/simplex.git
+cd simplex
+git submodule init
+git submodule update --remote --merge
+```
+
 Navigate to this directory in Terminal
 ```
 mkdir build
