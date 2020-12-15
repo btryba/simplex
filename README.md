@@ -32,7 +32,8 @@ git submodule init
 git submodule update --remote --merge
 ```
 
-Navigate to this directory in Terminal
+Next to actually start the build process:
+
 ```
 mkdir build
 cd build
@@ -40,6 +41,7 @@ cmake .. -G Ninja
 ninja
 ```
 
-Or you can use the CMake-tools extension by Microsoft in Visual Studio Code.
+Or you can use the CMake-tools extension by Microsoft in Visual Studio Code to do the build steps.
 
-This will create an output folder with all the libraries and executable files from all the projects.
+This will create an bin folder with all the libraries and executable files from all the projects.
+Inside the bin folder it will be organized by OS (eg: Linux, Windows, Darwin (Mac), etc...), it's bitness (eg: 32bit, 64bit) and then by build type (eg: Debug, Release, etc...)
