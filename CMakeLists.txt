@@ -1,10 +1,13 @@
 cmake_minimum_required(VERSION 3.0.0)
 project(Simplex VERSION 0.1.0)
 
-#execute_process(COMMAND git submodule update --remote --merge)
+include(CMakeOptions.cmake)
 
-include(CTest)
-enable_testing()
+#execute_process(COMMAND git submodule update --remote --merge)
+if(${EnableTesting})
+  include(CTest)
+  enable_testing()
+endif()
 
 #Determine if 32 or 64 bit
 set(OSBitness 32)
@@ -18,13 +21,11 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${FullOutputDir}/static libs")
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${FullOutputDir})
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${FullOutputDir})
 
-#Add the projects (need to be added in dependancy order!!!)
 add_subdirectory("simplex-lib")
 add_subdirectory("simplex-tui")
-
 add_subdirectory("simplexDevelopment")
 add_subdirectory("simplexTuiDevelopment")
 
-#set(CPACK_PROJECT_NAME ${PROJECT_NAME})
-#set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
-#include(CPack)
+if(${EnableCPack})
+  include(CPack)
+endif()
