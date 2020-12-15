@@ -7,12 +7,15 @@ First you will need to install g++, gdb, CMake (and I highly recommend Ninja). O
 
 ### Debian/Ubuntu/Linux Mint
 If you don't have the compilers yet:
-`apt install g++ gdb`
+
+`apt install g++ gdb build-essential`
 To install cmake and ninja:
+
 `apt install cmake ninja-build`
 
 ### Arch Linux
 `pacman -S cmake`
+
 `pacman -S ninja`
 
 ### Fedora
@@ -20,10 +23,12 @@ To install cmake and ninja:
 
 ## To Build:
 Navigate to this directory in Terminal
-`mkdir build`
-`cd build`
-`cmake .. -G Ninja`
-`ninja`
+```
+mkdir build
+cd build
+cmake .. -G Ninja
+ninja
+```
 
 Or you can use the CMake-tools extension by Microsoft in Visual Studio Code.
 
