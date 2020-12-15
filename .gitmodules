@@ -1,0 +1,6 @@
+[submodule "simplex-lib"]
+	path = simplex-lib
+	url = https://github.com/btryba/simplex-lib.git
+[submodule "simplex-tui"]
+	path = simplex-tui
+	url = https://github.com/btryba/simplex-tui.git
